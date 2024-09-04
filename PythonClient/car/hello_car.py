@@ -18,7 +18,7 @@ print ("Saving images to %s" % tmp_dir)
 try:
     os.makedirs(tmp_dir)
 except OSError:
-    if not os.path.isdir(tmp_dir):
+    if not os.path.isdir(tmp_dir): 
         raise
 
 for idx in range(3):

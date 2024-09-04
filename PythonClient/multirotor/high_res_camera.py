@@ -1,3 +1,4 @@
+import setup_path
 import airsim
 from datetime import datetime
 

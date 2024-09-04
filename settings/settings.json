@@ -1,0 +1,97 @@
+{
+	"SeeDocsAt": "https://github.com/Microsoft/AirSim/blob/main/docs/settings.md",
+	"SettingsVersion": 1.2,
+	"SimMode": "Multirotor",
+	"ClockSpeed": 1,
+	"ViewMode": "FlyWithMe",
+	"Vehicles": {
+		"FishEyeDrone": {
+			"VehicleType": "SimpleFlight",
+			"EnableCollisionPassthrogh": false,
+			"EnableCollisions": true,
+			"Cameras": {
+				"bottom-center": {
+					"CaptureSettings": [
+						{
+							"ImageType": 0,
+							"Width": 1920,
+							"Height": 1080,
+							"FOV_Degrees": 90
+						}
+					],
+					"X": 0,
+					"Y": 0,
+					"Z": 0,
+					"Pitch": -90,
+					"Roll": 0.0,
+					"Yaw": 0.0
+				},
+				"front-left": {
+					"CaptureSettings": [
+						{
+							"ImageType": 0,
+							"Width": 672,
+							"Height": 376,
+							"FOV_Degrees": 90
+						}
+					],
+					"X": 0.50,
+					"Y": -20.0,
+					"Z": 0.10,
+					"Pitch": 0.0,
+					"Roll": 0.0,
+					"Yaw": 0.0
+				},
+				"front-right": {
+					"CaptureSettings": [
+						{
+							"ImageType": 0,
+							"Width": 672,
+							"Height": 376,
+							"FOV_Degrees": 90
+						}
+					],
+					"X": 0.50,
+					"Y": 20.0,
+					"Z": 0.10,
+					"Pitch": 0.0,
+					"Roll": 0.0,
+					"Yaw": 0.0
+				}
+			},
+			"Gimbal": {
+				"Stabilization": 1,
+				"Pitch": -90,
+				"Roll": 0,
+				"Yaw": 0
+			},
+			"X": 0,
+			"Y": 0,
+			"Z": 0,
+			"Pitch": 0,
+			"Roll": 0,
+			"Yaw": 0
+		}
+	},
+	"SubWindows": [
+		{
+			"WindowID": 0,
+			"ImageType": 0,
+			"CameraName": "bottom-center",
+			"Visible": false
+		},
+		{
+			"WindowID": 1,
+			"ImageType": 0,
+			"CameraName": "bottom-center",
+			"Visible": false
+		},
+		{
+			"WindowID": 2,
+			"ImageType": 0,
+			"CameraName": "bottom-center",
+			"Visible": true
+		}
+	]
+}
+//hello
