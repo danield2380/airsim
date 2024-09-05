@@ -78,13 +78,13 @@
 			"WindowID": 0,
 			"ImageType": 0,
 			"CameraName": "bottom-center",
-			"Visible": false
+			"Visible": true
 		},
 		{
 			"WindowID": 1,
 			"ImageType": 0,
 			"CameraName": "bottom-center",
-			"Visible": false
+			"Visible": true
 		},
 		{
 			"WindowID": 2,
@@ -92,6 +92,21 @@
 			"CameraName": "bottom-center",
 			"Visible": true
 		}
-	]
+	],
+	"Recording": {
+		"RecordOnMove": false,
+		"RecordInterval": 0.05,
+		"Folder": "",
+		"Enabled": false,
+		"Cameras": [
+			{
+				"CameraName": "bottom-center",
+				"ImageType": 0,
+				"PixelsAsFloat": false,
+				"VehicleName": "FishEyeDrone",
+				"Compress": true
+			}
+		]
+	}
 }
 //hello
