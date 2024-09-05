@@ -46,6 +46,7 @@ print("state: %s" % pprint.pformat(state))
 airsim.wait_key('Press any key to move vehicle to (-10, 10, -10) at 5 m/s')
 client.moveToPositionAsync(-10, 10, -10, 5).join()
 
+
 client.hoverAsync().join()
 
 state = client.getMultirotorState()
