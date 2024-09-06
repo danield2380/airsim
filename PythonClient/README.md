@@ -102,15 +102,22 @@
 ## Simulation Implementation
 
 ### Simulate Drone Landing (hello_drone_landing.py)
-Select take off spot -> Drone fly to a different spot -> Drone land back to the take off spot
+Drone take off and land at the same spot
+* Drone take off and get take off position
+* Drone fly to a different spot 
+* Drone land back to the take off spot
 
 ### SimulateWeather Change (hello_drone_weather.py)
 Use weather API to change weather during the drone flying trip. 
-Drone take off Fog -> Drone Fly Snow -> Drone land Leaf
+* Drone take off set weather to Fog 
+* Drone fly set weather to Snow 
+* Drone land set weater to Leaf
 
 ### Simulate Windy Weather (hello_drone_wind.py)
 Use wind API to change wind speed during the drone flying trip
-Drone take off set wind to 15m/s towards right -> Drone Fly set wind to 0 -> landing set wind to 10m/s in forward direction
+* Drone take off set wind to 15m/s towards right 
+* Drone Fly set wind to 0 
+* Drone landing set wind to 10m/s in forward direction
 
 
 

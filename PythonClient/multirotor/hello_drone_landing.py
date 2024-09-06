@@ -38,7 +38,8 @@ print("Taking off...")
 client.armDisarm(True)
 client.takeoffAsync().join()
 
-print("Take off position is ", client.simGetVehiclePose(vehicle_name="FishEyeDrone").position)
+takeoff_pos = client.simGetVehiclePose(vehicle_name="FishEyeDrone").position
+print("Take off position is ", takeoff_pos.x_val, takeoff_pos.y_val, takeoff_pos.z_val)
 
 state = client.getMultirotorState()
 print("state: %s" % pprint.pformat(state))
@@ -89,7 +90,7 @@ airsim.wait_key('Press any key to reset to original state')
 #camera_pose = airsim.Pose(airsim.Vector3r(0, 0, 0), airsim.to_quaternion(math.radians(15), 0, 0)) #radians
 #client.simSetCameraPose("0", camera_pose)
 
-client.moveToPositionAsync(0.0, 0.0, -1, 5).join()
+client.moveToPositionAsync(takeoff_pos.x_val, takeoff_pos.y_val, takeoff_pos.z_val, 5).join()
 client.armDisarm(False)
 
 # that's enough fun for now. let's quit cleanly
